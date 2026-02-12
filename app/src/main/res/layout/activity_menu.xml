@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grupo2"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/our_menu"
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="50dp">
+
+        <!-- ANTOJITOS -->
+        <Button
+            android:id="@+id/button_antajitos"
+            android:text="@string/antajitos"
+            android:textColor="@color/white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"/>
+
+        <!-- ESPECIALIDADES -->
+        <Button
+            android:id="@+id/button_especialidades"
+            android:text="@string/especialidades"
+            android:textColor="@color/white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"/>
+
+        <!-- COMBINATIONS -->
+        <Button
+            android:id="@+id/button_combinations"
+            android:text="@string/combinations"
+            android:textColor="@color/white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"/>
+
+        <!-- TORTAS -->
+        <Button
+            android:id="@+id/button_tortas"
+            android:text="@string/tortas"
+            android:textColor="@color/white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"/>
+
+        <!-- SOPAS -->
+        <Button
+            android:id="@+id/button_sopas"
+            android:text="@string/sopas"
+            android:textColor="@color/white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"/>
+
+        <!-- DRINKS -->
+        <Button
+            android:id="@+id/button_drinks"
+            android:text="@string/drinks"
+            android:textColor="@color/white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_buttons_paddings"
+            android:paddingVertical="@dimen/menu_buttons_paddings"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"/>
+
+    </GridLayout>
+
+</LinearLayout>
